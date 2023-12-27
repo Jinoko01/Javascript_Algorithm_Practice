@@ -46,7 +46,7 @@ const dfs = (x, y, cnt, sum) => {
 for (let i = 0; i < n; i++) {
   for (let j = 0; j < m; j++) {
     visited[i][j] = true;
-    dfs(i, j, 0, 0);
+    dfs(i, j, 1, map[i][j]);
     visited[i][j] = false;
   }
 }
